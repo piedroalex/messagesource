@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+		xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MessageSource</title>
+	<link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}" />
+	<link rel="stylesheet" type="text/css" th:href="@{/css/home.css}" />
+  </head>
+  <body>
+  	<div class="container">
+		<div class="col-12">
+		    <h4 class="display-4 text-center" th:text="#{page.title}"></h4>
+		    <hr />
+	    </div>
+		<div class="col-6 offset-3 lousa_bart">
+		    <p class="h2 text-center" th:text="#{page.subtitle}"></p>
+			<img alt="Bart na Lousa" class="img-responsive" th:src="@{/images/lousa_bart.jpg}" />
+	   		<ul class="list-unstyled">
+				<li class="text-center lista" th:each="sentence, s : ${sentences}" th:text="|${s.index+1} - ${sentence}|"></li>
+  			</ul>
+		</div>
+   	</div>
+   	<footer class="layout-footer">		
+		<p class="text-muted text-center"><a class="link-light" href="https://github.com/piedroalex" target="_blank" th:text="#{page.footer}"></a></p>
+	</footer>
+	<script th:src="@{/js/bootstrap.min.js}"></script>
+  </body>
+</html>

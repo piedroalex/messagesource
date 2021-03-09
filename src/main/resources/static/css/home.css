@@ -1,0 +1,17 @@
+body {
+	background-color: #ecf0f1;
+}
+
+.layout-footer {
+ 	position: absolute;
+  	bottom: 0;
+  	width: 100%;
+  	background-color: #1e272e;
+}
+
+
+.lousa_bart .lista{
+  color:#fff;
+  position:relative;
+  bottom:350px;
+}
