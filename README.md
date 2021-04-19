@@ -1,6 +1,6 @@
 # Projeto: messagesource
 
-Esse é um projeto desenvolvido para exemplifica,r de uma forma simples (e divertida), o uso do MessageSource.
+Esse é um projeto desenvolvido para exemplificar de uma forma simples (e divertida), o uso do MessageSource.
 
 ## Tecnologias Utilizadas
 
